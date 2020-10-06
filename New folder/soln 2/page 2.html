@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>CONTACT</title>
+	<link  href="css3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>CONTACT</h1>
+		</div>
+		<div class="content">
+			<div class="nav">
+				<ul>
+					<li><a class="select" href="index.html">Home</a></li><br>
+					<li><a class="select" href="page 3.html">Object</a></li><br>
+					<li><a class="select" href="page 5.html">Gallery</a></li><br>
+					<li><a class="select" href="page 4.html">Mission</a></li><br>
+				</ul>
+			</div><pre>
+
+                <div id="main">
+				<h2>We will try to contact within 24 hours!</h2>
+				<hr>
+				<div class="align"><form id="myForm" method="gets"><table><tr><td>
+					first name=</td><td><input type="text" name="fname" size="30" maxlength="10"></td></tr>
+		            <tr><td>last name=</td><td><input type="text" name="lname" size="30"  maxlength="10"></td></tr>
+                    <tr><td>phonenumber=</td><td><input type="text" name="pnumber" size="30"  maxlength="10"></td></tr>
+					<tr><td>e-mail address=</td><td><input type="text" name="email" size="30" maxlength="30"></td></tr>
+					<tr><td><strong>press for submit or reset </strong><br>
+		           <input type="reset" value="reset">
+		           <button type="button" onclick="validateForm()">Submit</button></td></tr></table></form>
+		       </div></pre>
+	</div>
+	<div class="footer"><a href="index.html">Home</a>
+				<a href="mailto:susanpaudel15@gmail.com">contact info.</a>
+				<a>copyright &copy;2019.</a></div>
+				<script type="text/javascript">
+	function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+}</script>
+
+</body>
+
